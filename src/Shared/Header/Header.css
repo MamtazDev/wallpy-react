@@ -1,4 +1,5 @@
 
+
 /* Header Start */
 header,
 nav {
@@ -53,6 +54,8 @@ header,
     color: #FFF;
 }
 
+
+
 :focus-visible {
     outline: none;
 }
@@ -60,16 +63,13 @@ header,
 .navbar-toggler:focus {
     box-shadow: none;
 }
-.login_padding{
-    margin:8px;
-}
 
 .searchNav {
     position: relative;
     z-index: 999999;
     width: 771px;
     height: 45px;
-    background-image: url("../../assets/Search.png");
+    background-image: url("../assets/Search.png");
     background-repeat: no-repeat;
     background-position: center left 2%;
     background-size: initial;
@@ -98,6 +98,16 @@ header,
     font-weight: 400;
 }
 
+.profileMenu {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    padding: 6px 6px 6px 31px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.20);
+}
+
 .profileImg,
 .profileImg img {
     position: relative;
@@ -106,6 +116,31 @@ header,
     width: 50px;
     border-radius: 50%;
 }
+
+.profileMenu .favourite span svg path, .profileMenu .lock span svg path, .profileMenu .accSetting span svg path {
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.profileMenu .lock:hover span svg path,.profileMenu .accSetting:hover span svg path {
+    fill: #FDF516;
+}
+
+
+.profileMenu .favourite:hover span svg path{
+    fill:#DD2E44;
+}
+
+.profileMenu button{
+    opacity: 0.75;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.profileMenu button:hover{
+    opacity: 1;
+}
+
 
 .navBg {
     padding: 12px 22px;
@@ -151,6 +186,10 @@ header,
     color: #FDF516;
 }
 
+.childInner a:hover span svg path {
+    fill: #FDF516;
+}
+
 .accountParent:hover .accountChild {
     visibility: visible;
 }
@@ -167,6 +206,7 @@ header,
 .logoutBtn:hover {
     color: #F4F4F4;
 }
+
 
 .pt_85 {
     padding-top: 85px;
