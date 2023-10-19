@@ -5,9 +5,8 @@ import { Link } from "react-router-dom";
 const ForgetEmail = () => {
   return (
     <>
-      <div class="bgShadowTop">
-        <div class="authShadowBottom">
-          <div class="mt_85 container auth_Container">
+      <div class="bgShadowTop pt_85">
+          <div class=" container auth_Container">
             <div class="row">
               <div class="col-1 pe-0">
                 <div class="text-center">
@@ -72,7 +71,7 @@ const ForgetEmail = () => {
               </div>
             </div>
           </div>
-        </div>
+       
       </div>
     </>
   );
