@@ -8,6 +8,8 @@ import img5 from "../../assets/trending2.png";
 import img6 from "../../assets/trending4.png";
 import img7 from "../../assets/trending.png";
 import img8 from "../../assets/trending3.png";
+import fire from "../../assets/fire.png";
+import chart from "../../assets/chart.png";
 const imageData = [
   { src: img1, alt: "Image 1" },
   { src: img2, alt: "Image 2" },
@@ -17,6 +19,10 @@ const imageData = [
   { src: img6, alt: "Image 6" },
   { src: img7, alt: "Image 7" },
   { src: img8, alt: "Image 8" },
+  { src: img1, alt: "Image 1" },
+  { src: img2, alt: "Image 2" },
+  { src: img3, alt: "Image 3" },
+  { src: img4, alt: "Image 4" },
 ];
 const Trending = () => {
   return (
@@ -26,11 +32,11 @@ const Trending = () => {
           <div class="trendingHeader d-flex flex-wrap justify-content-start align-items-center mb-3">
             <div class="allBtn btnCustom">
               <button class="allBtnActive">
-                <img src="./assets/fire.png" alt="Trending" />
+                {/* <img src={fire} alt="Trending" /> */}
                 Trending
               </button>
               <button>
-                <img src="./assets/chart.png" alt="Upcoming" />
+                {/* <img src={chart} alt="Upcoming" /> */}
                 Upcoming
               </button>
             </div>
