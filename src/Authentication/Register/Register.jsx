@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import leftright from "../../assets/left_light.png";
 import "./Register.css";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Register = () => {
   const initialFormData = {
@@ -24,6 +25,7 @@ const Register = () => {
     const user = { ...formData };
     setUsers([...users, user]);
     setFormData(initialFormData);
+    // Swal.fire("Registered successfully");
   };
   useEffect(() => {
     const savedUsers = JSON.parse(localStorage.getItem("users"));
@@ -95,6 +97,7 @@ const Register = () => {
                             placeholder="Username"
                             value={formData.username}
                             onChange={handleChange}
+                            required
                           />
                           <label for="email">Email</label>
                           <input
@@ -105,6 +108,7 @@ const Register = () => {
                             placeholder="wallpapers@thewallpapersociety.com"
                             value={formData.email}
                             onChange={handleChange}
+                            required
                           />
                           <label for="password">Password</label>
                           <input
@@ -115,6 +119,7 @@ const Register = () => {
                             placeholder="*****************"
                             value={formData.password}
                             onChange={handleChange}
+                            required
                           />
                           <div class="text-center mt-4">
                             <button type="submit" class="darkBtn mb-2">

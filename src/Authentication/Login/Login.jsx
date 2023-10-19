@@ -4,28 +4,32 @@ import leftright from "../../assets/left_light.png";
 import fbsignin from "../../assets/fbsignin.png";
 import googlesignIn from "../../assets/googlesignIn.png";
 import applesignIn from "../../assets/applesignIn.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+// import Swal from "sweetalert2";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
-
+  const navigate = useNavigate();
   const handleLogin = () => {
     if (email && password) {
       const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
       const userFound = storedUsers.find(
         (user) => user.email === email && user.password === password
       );
-  
+
       if (userFound) {
         localStorage.setItem("loggedIn", "true");
         setLoggedIn(true);
+        window.alert("Login successfully");
+        navigate("/");
       } else {
         window.alert("User not found. Please register first.");
       }
     }
   };
-  
+
   return (
     <>
       <div class="bgShadowTop">
@@ -98,7 +102,7 @@ const Login = () => {
                               {/* </Link> */}
                             </button>
                             <Link
-                              to="forgetpassword.html"
+                              to="/forgetpassword"
                               class="d-block"
                               style={{ color: "#373737", fontSize: "10px" }}
                             >

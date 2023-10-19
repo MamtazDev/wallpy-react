@@ -3,7 +3,10 @@ import "./Header.css";
 
 import logout from "../../assets/logout.png";
 import profile from "../../assets/profile.png";
+import login from "../../assets/login.png";
+import reg from "../../assets/reg.png";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 const Header = () => {
   const [loggedIn, setLoggedIn] = useState(
@@ -57,10 +60,20 @@ const Header = () => {
                     </Link>
                     <div class="accountChild">
                       {/* <div class="row navBorder"> */}
-                      <div class={`row ${loggedIn ? "navBorder" : "login_padding"}`}>
+                      <div
+                        class={`row ${
+                          loggedIn ? "navBorder" : "login_padding"
+                        }`}
+                      >
                         <div class="col-6">
                           <div class="childInner d-flex flex-column gap-3 text-nowrap border_right">
-                            {!loggedIn && <Link to="/login">Login</Link>}
+                            {!loggedIn && (
+                              <Link to="/login">
+                                {" "}
+                                <img src={login} alt="Logout" />
+                                Login
+                              </Link>
+                            )}
                             {loggedIn && (
                               <>
                                 <Link to="profile.html">Profile</Link>
@@ -72,7 +85,7 @@ const Header = () => {
                         </div>
                         <div class="col-6" s>
                           <div class="childInner d-flex flex-column gap-3 text-nowrap">
-                            {!loggedIn && <Link to="/register">Register</Link>}
+                            {!loggedIn && <Link to="/register">             <img src={reg} alt="Logout" /> Register</Link>}
                             {loggedIn && (
                               <>
                                 <Link to="#">Messages</Link>
@@ -88,7 +101,7 @@ const Header = () => {
                           onClick={handleLogout}
                           class="logoutBtn mx-auto"
                         >
-                          <img src={logout} alt="Logout" />
+                          <img src={logout} alt="Logout"className="me-2" />
                           Log Out
                         </button>
                       )}
