@@ -6,7 +6,8 @@ import instagram from "../../assets/instagram.png";
 import twitter from "../../assets/twitter.png";
 import behance from "../../assets/behance.png";
 import dribble from "../../assets/dribble.png";
-import './Artist.css'
+import "./Artist.css";
+import { Link } from "react-router-dom";
 const artistData = [
   {
     img: img1,
@@ -70,145 +71,25 @@ const Artist = () => {
                     <p>{data.title}</p>
                   </div>
                   <div class="d-flex justify-content-between align-items-center mb-3">
-                    <a href="#">
+                    <Link to="#">
                       <img src={twitter} alt="Twitter" />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="#">
                       <img src={behance} alt="Behance" />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="#">
                       <img src={dribble} alt="Dribble" />
-                    </a>
-                    <a href="#">
+                    </Link>
+                    <Link to="#">
                       <img src={instagram} alt="Instragram" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
-                <a class="viewProfile" href="#">
+                <Link class="viewProfile" to="#">
                   View Profile
-                </a>
+                </Link>
               </div>
             ))}
-            {/* <div class="d-flex flex-column gap-2 align-items-center">
-              <img
-                class="proImg mb-3"
-                src="./assets/artist.png"
-                alt="Profile"
-              />
-              <div class="profileInner">
-                <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
-                  <img src="./assets/Verified.png" alt="img" />
-                  <p>Diberkato / Ilustrator</p>
-                </div>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <a href="#">
-                    <img src="./assets/twitter.png" alt="Twitter" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/behance.png" alt="Behance" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/dribble.png" alt="Dribble" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/instagram.png" alt="Instragram" />
-                  </a>
-                </div>
-              </div>
-              <a class="viewProfile" href="#" >
-                View Profile
-              </a>
-            </div>
-            <div class="d-flex flex-column gap-2 align-items-center">
-              <img
-                class="proImg mb-3"
-                src="./assets/artist.png"
-                alt="Profile"
-              />
-              <div class="profileInner">
-                <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
-                  <img src="./assets/Verified.png" alt="img" />
-                  <p>Diberkato / Ilustrator</p>
-                </div>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <a href="#">
-                    <img src="./assets/twitter.png" alt="Twitter" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/behance.png" alt="Behance" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/dribble.png" alt="Dribble" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/instagram.png" alt="Instragram" />
-                  </a>
-                </div>
-              </div>
-              <a class="viewProfile" href="#" >
-                View Profile
-              </a>
-            </div>
-            <div class="d-flex flex-column gap-2 align-items-center">
-              <img
-                class="proImg mb-3"
-                src="./assets/artist.png"
-                alt="Profile"
-              />
-              <div class="profileInner">
-                <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
-                  <img src="./assets/Verified.png" alt="img" />
-                  <p>Diberkato / Ilustrator</p>
-                </div>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <a href="#">
-                    <img src="./assets/twitter.png" alt="Twitter" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/behance.png" alt="Behance" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/dribble.png" alt="Dribble" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/instagram.png" alt="Instragram" />
-                  </a>
-                </div>
-              </div>
-              <a class="viewProfile" href="#" >
-                View Profile
-              </a>
-            </div>
-            <div class="d-flex flex-column gap-2 align-items-center">
-              <img
-                class="proImg mb-3"
-                src="./assets/artist.png"
-                alt="Profile"
-              />
-              <div class="profileInner">
-                <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
-                  <img src="./assets/Verified.png" alt="img" />
-                  <p>Diberkato / Ilustrator</p>
-                </div>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <a class="socialLink overflow-hidden" href="#">
-                    <img src="./assets/twitter.png" alt="Twitter" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/behance.png" alt="Behance" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/dribble.png" alt="Dribble" />
-                  </a>
-                  <a href="#">
-                    <img src="./assets/instagram.png" alt="Instragram" />
-                  </a>
-                </div>
-              </div>
-              <a class="viewProfile" href="#" >
-                View Profile
-              </a>
-            </div> */}
           </div>
         </div>
       </div>

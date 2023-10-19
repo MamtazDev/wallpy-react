@@ -3,6 +3,7 @@ import "./Featured.css";
 import img1 from "../../assets/feature.png";
 import img2 from "../../assets/feature2.png";
 import img3 from "../../assets/feature3.png";
+import { Link } from "react-router-dom";
 
 const featureData = [
   {
@@ -30,9 +31,9 @@ const Featured = () => {
               {featureData.map((image) => (
                 <div class="col-12 col-md-6 col-lg-4">
                   <div class="tredImg">
-                    <a href="/">
+                    <Link to="/">
                       <img class="img-fluid w-100" src={image.src} alt={image.alt} />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}

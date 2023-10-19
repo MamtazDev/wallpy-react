@@ -1,17 +1,13 @@
 import React from "react";
-import "./StaffPicks.css";
 import staff from "../../assets/staff.png";
 import staff2 from "../../assets/staff2.png";
 import staff3 from "../../assets/staff3.png";
 import { Link } from "react-router-dom";
-
-const StaffPicks = () => {
+const OfficialWallpapers = () => {
   return (
     <>
       <div class="container all_mb">
-        <h2 class="mb-4">
-          The <span style={{ color: "#FDF516" }}>WPS</span> Staff Picks
-        </h2>
+        <h2 class="mb-4">Official Wallpapers</h2>
         <div class="row gy-4">
           <div class="col-12 col-md-6">
             <div class="staff" style={{ height: "535px" }}>
@@ -55,4 +51,4 @@ const StaffPicks = () => {
   );
 };
 
-export default StaffPicks;
+export default OfficialWallpapers;

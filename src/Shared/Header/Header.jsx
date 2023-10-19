@@ -3,15 +3,16 @@ import "./Header.css";
 
 import logout from "../../assets/logout.png";
 import profile from "../../assets/profile.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <Link class="navbar-brand" to="/">
             WPS
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,25 +42,25 @@ const Header = () => {
               <li class="nav-item">
                 <ul class="navBg d-flex justify-content-center gap-3">
                   <li class="accountParent">
-                    <a class="nav-link" href="#">
+                    <Link class="nav-link" to="#">
                       Account
-                    </a>
+                    </Link>
                     <div class="accountChild">
                       <div class="row navBorder">
                         <div class="col-6">
                           <div class="childInner d-flex flex-column gap-3 text-nowrap border_right">
-                            <a href="login.html">Login</a>
-                            <a href="profile.html">Profile</a>
-                            <a href="#">Favorites</a>
-                            <a href="#">Collections</a>
+                            <Link to="/login">Login</Link>
+                            <Link to="profile.html">Profile</Link>
+                            <Link to="#">Favorites</Link>
+                            <Link to="#">Collections</Link>
                           </div>
                         </div>
                         <div class="col-6" s>
                           <div class="childInner d-flex flex-column gap-3 text-nowrap">
-                            <a href="register.html">Register</a>
-                            <a href="#">Messages</a>
-                            <a href="#">The Vault</a>
-                            <a href="setting.html">Settings</a>
+                            <Link to="/register">Register</Link>
+                            <Link to="#">Messages</Link>
+                            <Link to="#">The Vault</Link>
+                            <Link to="setting.html">Settings</Link>
                           </div>
                         </div>
                       </div>
@@ -73,9 +74,9 @@ const Header = () => {
                     <span className="border_right"></span>
                   </li>
                   <li>
-                    <a class="nav-link" href="#">
+                    <Link class="nav-link" to="#">
                       Upload
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>

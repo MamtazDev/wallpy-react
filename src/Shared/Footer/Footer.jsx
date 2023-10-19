@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -13,19 +14,19 @@ const Footer = () => {
               <ul>
                 <li>Navigation</li>
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="#">Home</Link>
                 </li>
                 <li>
-                  <a href="#">Account</a>
+                  <Link to="#">Account</Link>
                 </li>
                 <li>
-                  <a href="#">Favorites</a>
+                  <Link to="#">Favorites</Link>
                 </li>
                 <li>
-                  <a href="#">Messages</a>
+                  <Link to="#">Messages</Link>
                 </li>
                 <li>
-                  <a href="#">Site Map</a>
+                  <Link to="#">Site Map</Link>
                 </li>
               </ul>
             </div>
@@ -33,16 +34,16 @@ const Footer = () => {
               <ul>
                 <li>Top Categories</li>
                 <li>
-                  <a href="#">Gaming</a>
+                  <Link to="#">Gaming</Link>
                 </li>
                 <li>
-                  <a href="#">Anime</a>
+                  <Link to="#">Anime</Link>
                 </li>
                 <li>
-                  <a href="#">4K</a>
+                  <Link to="#">4K</Link>
                 </li>
                 <li>
-                  <a href="#">Japan</a>
+                  <Link to="#">Japan</Link>
                 </li>
               </ul>
             </div>
@@ -50,19 +51,19 @@ const Footer = () => {
               <ul>
                 <li>The Society</li>
                 <li>
-                  <a href="#">About</a>
+                  <Link to="#">About</Link>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <Link to="#">Contact</Link>
                 </li>
                 <li>
-                  <a href="#">Copyright Information</a>
+                  <Link to="#">Copyright Information</Link>
                 </li>
                 <li>
-                  <a href="#">Socials</a>
+                  <Link to="#">Socials</Link>
                 </li>
                 <li>
-                  <a href="#">Sponsors / Advertisers</a>
+                  <Link to="#">Sponsors / Advertisers</Link>
                 </li>
               </ul>
             </div>
@@ -71,13 +72,13 @@ const Footer = () => {
           <div class="footerBottom d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">
             <span>© The Wallpapers Society</span>
             <span>
-              <a href="#">Community Rules</a>
+              <Link to="#">Community Rules</Link>
             </span>
             <span>
-              <a href="#">Privacy Policy</a>
+              <Link to="#">Privacy Policy</Link>
             </span>
             <span>
-              <a href="#">Terms and Conditions</a>
+              <Link to="#">Terms and Conditions</Link>
             </span>
           </div>
         </div>

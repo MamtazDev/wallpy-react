@@ -10,6 +10,7 @@ import img7 from "../../assets/trending.png";
 import img8 from "../../assets/trending3.png";
 import fire from "../../assets/fire.png";
 import chart from "../../assets/chart.png";
+import { Link } from "react-router-dom";
 const imageData = [
   { src: img1, alt: "Image 1" },
   { src: img2, alt: "Image 2" },
@@ -52,13 +53,13 @@ const Trending = () => {
               {imageData.map((image, index) => (
                 <div key={index} className="col-12 col-md-3">
                   <div className="tredImg">
-                    <a href="wallpaper.html">
+                    <Link to="wallpaper.html">
                       <img
                         className="img-fluid"
                         src={image.src}
                         alt={image.alt}
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}
