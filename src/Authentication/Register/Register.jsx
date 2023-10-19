@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import leftright from "../../assets/left_light.png";
-
 import "./Register.css";
 import { Link } from "react-router-dom";
+
 const Register = () => {
+  const initialFormData = {
+    username: "",
+    email: "",
+    password: "",
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [users, setUsers] = useState([]);
+
+  // Function to handle changes in form fields
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const user = { ...formData };
+    setUsers([...users, user]);
+    setFormData(initialFormData);
+  };
+  useEffect(() => {
+    const savedUsers = JSON.parse(localStorage.getItem("users"));
+    if (savedUsers) {
+      setUsers(savedUsers);
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("users", JSON.stringify(users));
+  }, [users]);
+
   return (
     <>
       <div class="">
@@ -50,33 +81,45 @@ const Register = () => {
                           </button>
                           <button class="tabInner tabActive ">Sign Up</button>
                         </div>
-                        <form action="" style={{ marginBottom: "150px" }}>
+                        <form
+                          onSubmit={handleSubmit}
+                          style={{ marginBottom: "150px" }}
+                        >
                           <label for="name">Username</label>
+
                           <input
-                            class="mb-3"
+                            className="mb-3"
                             type="text"
                             name="username"
                             id="name"
                             placeholder="Username"
+                            value={formData.username}
+                            onChange={handleChange}
                           />
                           <label for="email">Email</label>
                           <input
-                            class="mb-3"
-                            type="mail"
+                            className="mb-3"
+                            type="email"
                             name="email"
                             id="email"
                             placeholder="wallpapers@thewallpapersociety.com"
+                            value={formData.email}
+                            onChange={handleChange}
                           />
                           <label for="password">Password</label>
                           <input
-                            class=""
+                            className=""
                             type="password"
-                            name=""
+                            name="password"
                             id="password"
                             placeholder="*****************"
+                            value={formData.password}
+                            onChange={handleChange}
                           />
                           <div class="text-center mt-4">
-                            <button class="darkBtn mb-2">Sign In</button>
+                            <button type="submit" class="darkBtn mb-2">
+                              Sign Up
+                            </button>
                           </div>
                         </form>
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import leftright from "../../assets/left_light.png";
 import fbsignin from "../../assets/fbsignin.png";
@@ -6,6 +6,26 @@ import googlesignIn from "../../assets/googlesignIn.png";
 import applesignIn from "../../assets/applesignIn.png";
 import { Link } from "react-router-dom";
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    if (email && password) {
+      const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
+      const userFound = storedUsers.find(
+        (user) => user.email === email && user.password === password
+      );
+  
+      if (userFound) {
+        localStorage.setItem("loggedIn", "true");
+        setLoggedIn(true);
+      } else {
+        window.alert("User not found. Please register first.");
+      }
+    }
+  };
+  
   return (
     <>
       <div class="bgShadowTop">
@@ -51,27 +71,31 @@ const Login = () => {
                             </Link>
                           </button>
                         </div>
-                        <form action="" class="mb-5">
+                        <form onSubmit={handleLogin} class="mb-5">
                           <label for="email">Email</label>
                           <input
-                            class="mb-3"
-                            type="mail"
+                            className="mb-3"
+                            type="email"
                             name="email"
                             id="email"
                             placeholder="wallpapers@thewallpapersociety.com"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                           />
-                          <label for="password">Password</label>
+                          <label htmlFor="password">Password</label>
                           <input
                             type="password"
-                            name=""
+                            name="password"
                             id="password"
                             placeholder="*****************"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                           />
                           <div class="text-center mt-4">
-                            <button class="darkBtn mb-2">
-                              <Link class="text-white" to="/login">
-                                Sign In
-                              </Link>
+                            <button type="submit" class="darkBtn mb-2">
+                              {/* <Link class="text-white" to="/login"> */}
+                              Sign In
+                              {/* </Link> */}
                             </button>
                             <Link
                               to="forgetpassword.html"

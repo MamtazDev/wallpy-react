@@ -62,6 +62,9 @@ header,
 .navbar-toggler:focus {
     box-shadow: none;
 }
+.login_padding{
+    margin:8px;
+}
 
 .searchNav {
     position: relative;

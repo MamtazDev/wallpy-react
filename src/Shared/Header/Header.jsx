@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 import logout from "../../assets/logout.png";
@@ -6,6 +6,16 @@ import profile from "../../assets/profile.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [loggedIn, setLoggedIn] = useState(
+    JSON.parse(localStorage.getItem("loggedIn"))
+  );
+
+  const handleLogout = () => {
+    // Update the value in localStorage
+    localStorage.setItem("loggedIn", JSON.stringify(false));
+    setLoggedIn(false);
+  };
+
   return (
     <>
       <nav class="navbar navbar-expand-lg">
@@ -46,28 +56,42 @@ const Header = () => {
                       Account
                     </Link>
                     <div class="accountChild">
-                      <div class="row navBorder">
+                      {/* <div class="row navBorder"> */}
+                      <div class={`row ${loggedIn ? "navBorder" : "login_padding"}`}>
                         <div class="col-6">
                           <div class="childInner d-flex flex-column gap-3 text-nowrap border_right">
-                            <Link to="/login">Login</Link>
-                            <Link to="profile.html">Profile</Link>
-                            <Link to="#">Favorites</Link>
-                            <Link to="#">Collections</Link>
+                            {!loggedIn && <Link to="/login">Login</Link>}
+                            {loggedIn && (
+                              <>
+                                <Link to="profile.html">Profile</Link>
+                                <Link to="#">Favorites</Link>
+                                <Link to="#">Collections</Link>
+                              </>
+                            )}
                           </div>
                         </div>
                         <div class="col-6" s>
                           <div class="childInner d-flex flex-column gap-3 text-nowrap">
-                            <Link to="/register">Register</Link>
-                            <Link to="#">Messages</Link>
-                            <Link to="#">The Vault</Link>
-                            <Link to="setting.html">Settings</Link>
+                            {!loggedIn && <Link to="/register">Register</Link>}
+                            {loggedIn && (
+                              <>
+                                <Link to="#">Messages</Link>
+                                <Link to="#">The Vault</Link>
+                                <Link to="setting.html">Settings</Link>
+                              </>
+                            )}
                           </div>
                         </div>
                       </div>
-                      <button class="logoutBtn mx-auto">
-                        <img src={logout} alt="Logout" />
-                        Log Out
-                      </button>
+                      {loggedIn && (
+                        <button
+                          onClick={handleLogout}
+                          class="logoutBtn mx-auto"
+                        >
+                          <img src={logout} alt="Logout" />
+                          Log Out
+                        </button>
+                      )}
                     </div>
                   </li>
                   <li>
