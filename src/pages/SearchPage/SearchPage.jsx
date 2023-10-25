@@ -9,6 +9,7 @@ import phone_iphone from "../../assets/phone_iphone.png";
 import tablet_mac from "../../assets/tablet_mac.png";
 import videogame_asset from "../../assets/videogame_asset.png";
 import autorenew from "../../assets/autorenew.png";
+import SearchImages from "./SearchImages";
 
 const SearchPage = () => {
   return (
@@ -232,54 +233,10 @@ const SearchPage = () => {
           </div>
         </>
 
-        {/* <section>
+        <section>
           <div className="container search_Container">
             <div className="searchMain d-flex flex-wrap align-items-center gap-3 mb-5">
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
-              <div className="tredImg">
-                <a href="#">
-                  <img className="searchImg img-fluid" src="./assets/trending2.png" alt="img" />
-                </a>
-              </div>
+              <SearchImages />
             </div>
             <div>
               <span className="d-block text-center">
@@ -287,7 +244,7 @@ const SearchPage = () => {
               </span>
             </div>
           </div>
-        </section> */}
+        </section>
       </div>
     </>
   );
