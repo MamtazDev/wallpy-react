@@ -6,6 +6,7 @@ import Login from "../Authentication/Login/Login";
 import Forgetpassword from "../Authentication/Forgetpassword/Forgetpassword";
 import ForgetEmail from "../Authentication/Forgetpassword/ForgetEmail";
 import ConfirmationEmail from "../Authentication/Forgetpassword/ConfirmationEmail";
+import SearchPage from "../pages/SearchPage/SearchPage";
 
 export const router = createBrowserRouter([
   {
@@ -37,5 +38,9 @@ export const router = createBrowserRouter([
   {
     path: "/confirmationEmail",
     element: <ConfirmationEmail />,
+  },
+  {
+    path: "/searchPage",
+    element: <SearchPage />,
   },
 ]);
