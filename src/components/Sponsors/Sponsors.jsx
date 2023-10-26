@@ -6,41 +6,41 @@ import img4 from "../../assets/sponsor4.png";
 const Sponsors = () => {
   return (
     <>
-      <div class="container">
-        <h2 class="mb-4">Sponsors</h2>
-        <div class="row gy-4">
-          <div class="col-12 col-md-6">
-            <div class="staff" style={{height:"421px"}}>
+      <div className="container">
+        <h2 className="mb-4">Sponsors</h2>
+        <div className="row gy-4">
+          <div className="col-12 col-md-6">
+            <div className="staff" style={{height:"421px"}}>
               <img
-                class="img-fluid"
+                className="img-fluid"
                 src={img}
                 alt="Img"
                 style={{height:"421px"}}
               />
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="d-flex flex-column gap-4">
-              <div class="staff">
+          <div className="col-12 col-md-6">
+            <div className="d-flex flex-column gap-4">
+              <div className="staff">
                 <img
-                  class="img-fluid"
+                  className="img-fluid"
                   src={img2}
                   alt="Img"
                    style={{height:"195px"}}
                 />
               </div>
-              <div class="d-flex justify-content-between gap-4 align-items-center">
-                <div class="staff">
+              <div className="d-flex justify-content-between gap-4 align-items-center">
+                <div className="staff">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src={img3}
                     alt="Img"
                      style={{height:"195px"}}
                   />
                 </div>
-                <div class="staff">
+                <div className="staff">
                   <img
-                    class="img-fluid"
+                    className="img-fluid"
                     src={img4}
                     alt="Img"
                      style={{height:"195px"}}

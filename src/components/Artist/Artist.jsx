@@ -55,22 +55,22 @@ const Artist = () => {
   return (
     <>
       =
-      <div class="container all_mb">
-        <h2 class="mb-4">Featured Artists</h2>
-        <div class="artist">
-          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4">
+      <div className="container all_mb">
+        <h2 className="mb-4">Featured Artists</h2>
+        <div className="artist">
+          <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4">
             {artistData.map((data, index) => (
               <div
-                class="d-flex flex-column gap-2 align-items-center"
+                className="d-flex flex-column gap-2 align-items-center"
                 key={index}
               >
-                <img class="proImg mb-3" src={data.img} alt="Profile" />
-                <div class="profileInner">
-                  <div class="d-flex justify-content-start gap-1 align-items-center mb-2">
+                <img className="proImg mb-3" src={data.img} alt="Profile" />
+                <div className="profileInner">
+                  <div className="d-flex justify-content-start gap-1 align-items-center mb-2">
                     <img src={verified} alt="img" />
                     <p>{data.title}</p>
                   </div>
-                  <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div className="d-flex justify-content-between align-items-center mb-3">
                     <Link to="#">
                       <img src={twitter} alt="Twitter" />
                     </Link>
@@ -85,7 +85,7 @@ const Artist = () => {
                     </Link>
                   </div>
                 </div>
-                <Link class="viewProfile" to="#">
+                <Link className="viewProfile" to="#">
                   View Profile
                 </Link>
               </div>

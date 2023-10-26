@@ -76,7 +76,7 @@ const Header = () => {
                             )}
                             {loggedIn && (
                               <>
-                                <Link to="profile.html">Profile</Link>
+                                <Link to="profile">Profile</Link>
                                 <Link to="#">Favorites</Link>
                                 <Link to="#">Collections</Link>
                               </>
@@ -95,7 +95,7 @@ const Header = () => {
                               <>
                                 <Link to="#">Messages</Link>
                                 <Link to="#">The Vault</Link>
-                                <Link to="setting.html">Settings</Link>
+                                <Link to="setting">Settings</Link>
                               </>
                             )}
                           </div>
@@ -178,7 +178,7 @@ const Header = () => {
                   </span>
                 </a>
 
-                <a href="accountSetting.html" class="accSetting">
+                <a href="accountSetting" class="accSetting">
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +202,7 @@ const Header = () => {
                   </span>
                 </a>
 
-                <a href="profile.html">
+                <a href="profile">
                   <div class="profileImg text-center">
                     <img src={profile} alt="Profile Image" />
                   </div>

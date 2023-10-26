@@ -22,15 +22,15 @@ import library_add from "../../assets/library_add.png";
 const WallPaper = () => {
   return (
     <>
-      <div class="bgShadowTop">
+      <div className="bgShadowTop">
         <header>
-          <nav class="navbar navbar-expand-lg">
-            <div class="container custom_Container">
-              <a class="navbar-brand" href="index.html">
+          <nav className="navbar navbar-expand-lg">
+            <div className="container custom_Container">
+              <a className="navbar-brand" href="index">
                 <img src={logo} alt="Logo" />
               </a>
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -38,17 +38,17 @@ const WallPaper = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon">
-                  <i class="fa fa-bars"></i>
+                <span className="navbar-toggler-icon">
+                  <i className="fa fa-bars"></i>
                 </span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                  <li class="nav-item">
-                    <form class="d-flex">
-                      <div class="searchNav" style={{ maxWidth: "348px" }}>
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                  <li className="nav-item">
+                    <form className="d-flex">
+                      <div className="searchNav" style={{ maxWidth: "348px" }}>
                         <input
-                          class="w-100"
+                          className="w-100"
                           type="search"
                           placeholder="Find your next wallpaper..."
                         />
@@ -56,9 +56,9 @@ const WallPaper = () => {
                     </form>
                   </li>
                 </ul>
-                <div class="text-center">
-                  <a class="backBtn" href="index.html">
-                    <img class="me-2" src={left_light} alt="Left Arrow" />
+                <div className="text-center">
+                  <a className="backBtn" href="index">
+                    <img className="me-2" src={left_light} alt="Left Arrow" />
                     Back
                   </a>
                 </div>
@@ -68,23 +68,23 @@ const WallPaper = () => {
         </header>
 
         <section>
-          <div class="container custom_Container">
-            <div class="d-flex justify-content-center align-items-start gap-2 all_mb">
-              <div class="sideBar fontBak h-100">
-                <p class="text-center mb-3">Posted by</p>
-                <div class="d-flex justify-content-center align-items-center gap-5 mb-4">
+          <div className="container custom_Container">
+            <div className="d-flex justify-content-center align-items-start gap-2 all_mb">
+              <div className="sideBar fontBak h-100">
+                <p className="text-center mb-3">Posted by</p>
+                <div className="d-flex justify-content-center align-items-center gap-5 mb-4">
                   <div
-                    class="text-center"
+                    className="text-center"
                     style={{ height: "75px", width: "75px" }}
                   >
-                    <img class="sideImgPro" src={profile} alt="Profile Image" />
+                    <img className="sideImgPro" src={profile} alt="Profile Image" />
                   </div>
-                  <div class="d-flex flex-column justify-content-center align-items-center gap-2">
+                  <div className="d-flex flex-column justify-content-center align-items-center gap-2">
                     <h3>
                       krs
                       <img src={Verified} alt="Verified" />
                     </h3>
-                    <div class="d-flex justify-content-center gap-3 align-items-center mb-4">
+                    <div className="d-flex justify-content-center gap-3 align-items-center mb-4">
                       <a href="#">
                         <img src={twitter} alt="Twitter" />
                       </a>
@@ -99,7 +99,7 @@ const WallPaper = () => {
                       </a>
                     </div>
                     <a
-                      class="viewProfile"
+                      className="viewProfile"
                       href="#"
                       style={{ fontSize: "10px" }}
                     >
@@ -109,7 +109,7 @@ const WallPaper = () => {
                 </div>
                 <hr />
 
-                <div class="d-flex flex-column align-items-center gap-1 mb-3">
+                <div className="d-flex flex-column align-items-center gap-1 mb-3">
                   <p style={{ color: "#ccc" }}>Dimensions</p>
                   <p>3840 x 2160</p>
                   <div>
@@ -120,17 +120,17 @@ const WallPaper = () => {
                   </div>
                 </div>
 
-                <div class="mb-3">
-                  <p class="text-center mb-2" style={{ color: "#ccc" }}>
+                <div className="mb-3">
+                  <p className="text-center mb-2" style={{ color: "#ccc" }}>
                     Tag
                   </p>
                   <p
-                    class="text-center"
+                    className="text-center"
                     style={{ color: "#FDF516", fontSize: "12px" }}
                   >
                     SFW
                   </p>
-                  <div class="tag">
+                  <div className="tag">
                     <span>#cod</span>
                     <span>#callofduty</span>
                     <span>#ghost</span>
@@ -142,11 +142,11 @@ const WallPaper = () => {
                   </div>
                 </div>
 
-                <div class="mb-3">
-                  <p class="text-center mb-2" style={{ color: "#ccc" }}>
+                <div className="mb-3">
+                  <p className="text-center mb-2" style={{ color: "#ccc" }}>
                     Statistics & Information
                   </p>
-                  <div class="info d-flex justify-content-between gap-4">
+                  <div className="info d-flex justify-content-between gap-4">
                     <div>
                       <p>
                         Views: <span>8947</span>
@@ -166,93 +166,93 @@ const WallPaper = () => {
                   </div>
                 </div>
 
-                <div class="mb-4">
-                  <p class="text-center mb-3" style={{ color: "#ccc" }}>
+                <div className="mb-4">
+                  <p className="text-center mb-3" style={{ color: "#ccc" }}>
                     Credits
                   </p>
-                  <div class="info">
+                  <div className="info">
                     <p>Source:</p>
                     <p>Original Author:</p>
                   </div>
                 </div>
 
-                <div class="text-center mb-4">
-                  <button class="downLoadBtn">
+                <div className="text-center mb-4">
+                  <button className="downLoadBtn">
                     Download
                     <img src={arrow_down_light} alt="" />
                   </button>
                 </div>
 
-                <div class="ownerShip d-flex flex-column gap-4">
+                <div className="ownerShip d-flex flex-column gap-4">
                   <p
-                    class="text-center"
+                    className="text-center"
                     style={{ color: "#5A5A5A", fontSize: "12px" }}
                   >
                     Ownership of all images belongs to their respective original
                     owners & illustrators.
                   </p>
-                  <div class="listBtn d-flex justify-content-center align-items-center gap-3">
-                    <button class="text-white">Claim Listing</button>
-                    <button class="text-white">Remove Listing</button>
+                  <div className="listBtn d-flex justify-content-center align-items-center gap-3">
+                    <button className="text-white">Claim Listing</button>
+                    <button className="text-white">Remove Listing</button>
                   </div>
 
-                  <div class="d-flex justify-content-center align-items-center gap-3">
+                  <div className="d-flex justify-content-center align-items-center gap-3">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms and Conditions</a>
                   </div>
                 </div>
               </div>
-              <div class="wallpaper fontBak">
-                {/* <img class="img-fluid" src={wallpaper} alt="WallPaper" /> */}
-                <div class="btnPosition d-flex justify-content-end gap-3">
-                  <div class="addLibrary">
+              <div className="wallpaper fontBak">
+                {/* <img className="img-fluid" src={wallpaper} alt="WallPaper" /> */}
+                <div className="btnPosition d-flex justify-content-end gap-3">
+                  <div className="addLibrary">
                     <button>
                       <span>
                         <img src={library_add} alt="Add Library" />
                       </span>
                     </button>
-                    <div class="libraryOption">
-                      <div class="searchWallpaper mb-4">
+                    <div className="libraryOption">
+                      <div className="searchWallpaper mb-4">
                         <input
-                          class="fontBak w-100"
+                          className="fontBak w-100"
                           type="search"
                           placeholder="Search Collections"
                         />
                       </div>
-                      <div class="d-flex flex-column justify-content-start align-items-start gap-1">
-                        <button class="fontBak">
+                      <div className="d-flex flex-column justify-content-start align-items-start gap-1">
+                        <button className="fontBak">
                           <img
-                            class="img-fluid"
+                            className="img-fluid"
                             src={photo_library}
                             alt="img"
                           />
                           Call of Duty
                         </button>
-                        <hr class="w-100" />
-                        <button class="fontBak">
+                        <hr className="w-100" />
+                        <button className="fontBak">
                           <img src={photo_library} alt="img" />
                           World of Warcraft
                         </button>
-                        <hr class="w-100" />
-                        <button class="fontBak">
+                        <hr className="w-100" />
+                        <button className="fontBak">
                           <img src={photo_library} alt="img" />
                           League of Legends
                         </button>
-                        <hr class="w-100" />
-                        <button class="fontBak">
+                        <hr className="w-100" />
+                        <button className="fontBak">
                           <img src={photo_library} alt="img" />
                           Anime
                         </button>
-                        <hr class="w-100" />
-                        <button class="fontBak">
+                        <hr className="w-100" />
+                        <button className="fontBak">
                           <img src={photo_library} alt="img" />
                           Landscapes
                         </button>
-                        <hr class="w-100" />
+                        <hr className="w-100" />
                       </div>
                     </div>
                   </div>
-                  <button class="like">
+                  <button className="like">
                     <span>
                       <img src={likedgray} alt="Liked" />
                     </span>
@@ -264,35 +264,35 @@ const WallPaper = () => {
         </section>
       </div>
 
-      <div class="bgShadowbottom">
+      <div className="bgShadowbottom">
         <section>
-          <div class="container custom_Container">
-            <h3 class="all_mb">You may also like</h3>
-            <div class="row gy-4 mb-4">
-              <div class="col-12 col-md-4">
-                <div class="tredImg">
+          <div className="container custom_Container">
+            <h3 className="all_mb">You may also like</h3>
+            <div className="row gy-4 mb-4">
+              <div className="col-12 col-md-4">
+                <div className="tredImg">
                   <a href="#">
-                    <img class="img-fluid w-100" src={wallpaper} alt="img" />
+                    <img className="img-fluid w-100" src={wallpaper} alt="img" />
                   </a>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
-                <div class="tredImg">
+              <div className="col-12 col-md-4">
+                <div className="tredImg">
                   <a href="#">
-                    <img class="img-fluid w-100" src={wallpaper1} alt="img" />
+                    <img className="img-fluid w-100" src={wallpaper1} alt="img" />
                   </a>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
-                <div class="tredImg">
+              <div className="col-12 col-md-4">
+                <div className="tredImg">
                   <a href="#">
-                    <img class="img-fluid w-100" src={wallpaper2} alt="img" />
+                    <img className="img-fluid w-100" src={wallpaper2} alt="img" />
                   </a>
                 </div>
               </div>
             </div>
-            <span class="d-block text-center">
-              <button class="viewProfile" style={{ fontSize: "12px" }}>
+            <span className="d-block text-center">
+              <button className="viewProfile" style={{ fontSize: "12px" }}>
                 View More
               </button>
             </span>
@@ -300,12 +300,12 @@ const WallPaper = () => {
         </section>
 
         <footer>
-          <div class="container">
-            <div class="row gy-2">
-              <div class="col-12 col-md-6">
+          <div className="container">
+            <div className="row gy-2">
+              <div className="col-12 col-md-6">
                 <p>THE WALLPAPER SOCIETY</p>
               </div>
-              <div class="col-12 col-md-2">
+              <div className="col-12 col-md-2">
                 <ul>
                   <li>Navigation</li>
                   <li>
@@ -325,7 +325,7 @@ const WallPaper = () => {
                   </li>
                 </ul>
               </div>
-              <div class="col-12 col-md-2">
+              <div className="col-12 col-md-2">
                 <ul>
                   <li>Top Categories</li>
                   <li>
@@ -342,7 +342,7 @@ const WallPaper = () => {
                   </li>
                 </ul>
               </div>
-              <div class="col-12 col-md-2">
+              <div className="col-12 col-md-2">
                 <ul>
                   <li>The Society</li>
                   <li>
@@ -364,7 +364,7 @@ const WallPaper = () => {
               </div>
             </div>
             <hr />
-            <div class="footerBottom d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+            <div className="footerBottom d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
               <span>© The Wallpapers Society</span>
               <span>
                 <a href="#">Community Rules</a>
@@ -375,9 +375,9 @@ const WallPaper = () => {
               <span>
                 <a href="#">Terms and Conditions</a>
               </span>
-              <div class="themeChangeBtn d-flex justify-content-center align-items-center gap-1">
+              <div className="themeChangeBtn d-flex justify-content-center align-items-center gap-1">
                 <div
-                  class="d-flex justify-content-center align-items-center"
+                  className="d-flex justify-content-center align-items-center"
                   style={{ gap: "2px" }}
                 >
                   <img src={Moon} alt="img" />

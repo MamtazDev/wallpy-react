@@ -8,16 +8,16 @@ import { Link } from "react-router-dom";
 const StaffPicks = () => {
   return (
     <>
-      <div class="container all_mb">
-        <h2 class="mb-4">
+      <div className="container all_mb">
+        <h2 className="mb-4">
           The <span style={{ color: "#FDF516" }}>WPS</span> Staff Picks
         </h2>
-        <div class="row gy-4">
-          <div class="col-12 col-md-6">
-            <div class="staff" style={{ height: "535px" }}>
+        <div className="row gy-4">
+          <div className="col-12 col-md-6">
+            <div className="staff" style={{ height: "535px" }}>
               <Link to="#">
                 <img
-                  class="img-fluid"
+                  className="img-fluid"
                   src={staff}
                   alt="Img"
                   style={{ height: "535px" }}
@@ -25,22 +25,22 @@ const StaffPicks = () => {
               </Link>
             </div>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="d-flex flex-column gap-4">
-              <div class="staff">
+          <div className="col-12 col-md-6">
+            <div className="d-flex flex-column gap-4">
+              <div className="staff">
                 <Link to="#">
                   <img
-                    class="img-fluid w-100"
+                    className="img-fluid w-100"
                     src={staff2}
                     alt="Img"
                     style={{ height: "253px" }}
                   />
                 </Link>
               </div>
-              <div class="staff">
+              <div className="staff">
                 <Link to="#">
                   <img
-                    class="img-fluid w-100"
+                    className="img-fluid w-100"
                     src={staff3}
                     alt="Img"
                     style={{ height: "253px" }}

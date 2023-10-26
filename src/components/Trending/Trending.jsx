@@ -28,11 +28,11 @@ const imageData = [
 const Trending = () => {
   return (
     <>
-      <div class="container">
-        <div class="trending all_mb">
-          <div class="trendingHeader d-flex flex-wrap justify-content-start align-items-center mb-3">
-            <div class="allBtn btnCustom">
-              <button class="allBtnActive">
+      <div className="container">
+        <div className="trending all_mb">
+          <div className="trendingHeader d-flex flex-wrap justify-content-start align-items-center mb-3">
+            <div className="allBtn btnCustom">
+              <button className="allBtnActive">
                 {/* <img src={fire} alt="Trending" /> */}
                 Trending
               </button>
@@ -41,19 +41,19 @@ const Trending = () => {
                 Upcoming
               </button>
             </div>
-            <div class="allBtn">
-              <button class="allBtnActive">All</button>
+            <div className="allBtn">
+              <button className="allBtnActive">All</button>
               <button>Illustration</button>
               <button>AI</button>
               <button>Photography</button>
             </div>
           </div>
-          <div class="trendingInner mb-4">
-            <div class="row gy-4">
+          <div className="trendingInner mb-4">
+            <div className="row gy-4">
               {imageData.map((image, index) => (
                 <div key={index} className="col-12 col-md-3">
                   <div className="tredImg">
-                    <Link to="wallpaper.html">
+                    <Link to="wallpaper">
                       <img
                         className="img-fluid"
                         src={image.src}
@@ -65,7 +65,7 @@ const Trending = () => {
               ))}
             </div>
           </div>
-          <button class="moreBtn">More Wallpapers</button>
+          <button className="moreBtn">More Wallpapers</button>
         </div>
       </div>
     </>

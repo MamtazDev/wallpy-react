@@ -36,46 +36,46 @@ const Register = () => {
 
   return (
     <>
-      <div class="bgShadowTop pt_85">
-        <div class="container auth_Container">
-          <div class="row">
-            <div class="col-1 pe-0">
-              <div class="text-center">
-                <Link class="backBtn" to="/">
-                  <img class="me-2" src={leftright} alt="Left Arrow" />
+      <div className="bgShadowTop pt_85">
+        <div className="container auth_Container">
+          <div className="row">
+            <div className="col-1 pe-0">
+              <div className="text-center">
+                <Link className="backBtn" to="/">
+                  <img className="me-2" src={leftright} alt="Left Arrow" />
                   Back
                 </Link>
               </div>
             </div>
 
-            <div class="col-11">
-              <div class="brightBg">
-                <div class="row">
-                  <div class="col-6">
-                    <div class="imgLogin d-flex flex-column justify-content-between align-items-center">
+            <div className="col-11">
+              <div className="brightBg">
+                <div className="row">
+                  <div className="col-6">
+                    <div className="imgLogin d-flex flex-column justify-content-between align-items-center">
                       <p>Welcome to the Society</p>
-                      <div class="text-center">
-                        <span class="mb-2 d-block">Random facts about WPS</span>
-                        <div class="addedWall">
+                      <div className="text-center">
+                        <span className="mb-2 d-block">Random facts about WPS</span>
+                        <div className="addedWall">
                           <span style={{ color: "#FFF" }}>
                             You can get achievement points
-                            <br class="d-none d-md-block" /> by uploading
+                            <br className="d-none d-md-block" /> by uploading
                             wallpapers
                           </span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div className="col-6">
+                    <div className="d-flex flex-column justify-content-center align-items-center">
                       <h1>THE WALLPAPER SOCIETY</h1>
-                      <div class="authtab text-center mx-auto">
-                        <button class="tabInner">
-                          <Link class="text-dark" to="/login">
+                      <div className="authtab text-center mx-auto">
+                        <button className="tabInner">
+                          <Link className="text-dark" to="/login">
                             Sign In
                           </Link>
                         </button>
-                        <button class="tabInner tabActive ">Sign Up</button>
+                        <button className="tabInner tabActive ">Sign Up</button>
                       </div>
                       <form
                         onSubmit={handleSubmit}
@@ -115,14 +115,14 @@ const Register = () => {
                           onChange={handleChange}
                           required
                         />
-                        <div class="text-center mt-4">
-                          <button type="submit" class="darkBtn mb-2">
+                        <div className="text-center mt-4">
+                          <button type="submit" className="darkBtn mb-2">
                             Sign Up
                           </button>
                         </div>
                       </form>
 
-                      <div class="community d-flex justify-content-center gap-4 align-items-center mt-5">
+                      <div className="community d-flex justify-content-center gap-4 align-items-center mt-5">
                         <Link to="#">Community Rules</Link>
                         <Link to="#">Privacy Policy</Link>
                         <Link to="#">Terms and Conditions</Link>

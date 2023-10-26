@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <>
        <footer>
-        <div class="container">
-            <div class="row gy-2 text-center text-md-start">
-                <div class="col-12 col-md-6">
+        <div className="container">
+            <div className="row gy-2 text-center text-md-start">
+                <div className="col-12 col-md-6">
                     <p>THE WALLPAPER SOCIETY</p>
                 </div>
-                <div class="col-12 col-md-2">
+                <div className="col-12 col-md-2">
                     <ul>
                         <li>Navigation</li>
                         <li><a href="#">Home</a></li>
@@ -21,7 +21,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-2">
+                <div className="col-12 col-md-2">
                     <ul>
                         <li>The Society</li>
                         <li><a href="#">About</a></li>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr/>
-            <div class="footerBottom d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">
+            <div className="footerBottom d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">
                 <span>© The Wallpapers Society</span>
                 <span><a href="#">Community Rules</a></span>
                 <span><a href="#">Privacy Policy</a></span>

@@ -23,16 +23,16 @@ const featureData = [
 const Featured = () => {
   return (
     <>
-      <div class="bgShadowBottom">
-        <div class="container">
-          <div class="feature all_mb">
-            <h2 class="mb-4">Featured Wallpapers</h2>
-            <div class="row gy-4">
+      <div className="bgShadowBottom">
+        <div className="container">
+          <div className="feature all_mb">
+            <h2 className="mb-4">Featured Wallpapers</h2>
+            <div className="row gy-4">
               {featureData.map((image) => (
-                <div class="col-12 col-md-6 col-lg-4">
-                  <div class="tredImg">
+                <div className="col-12 col-md-6 col-lg-4">
+                  <div className="tredImg">
                     <Link to="/">
-                      <img class="img-fluid w-100" src={image.src} alt={image.alt} />
+                      <img className="img-fluid w-100" src={image.src} alt={image.alt} />
                     </Link>
                   </div>
                 </div>
