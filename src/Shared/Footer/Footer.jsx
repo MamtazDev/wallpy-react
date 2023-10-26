@@ -13,31 +13,31 @@ const Footer = () => {
                 <div className="col-12 col-md-2">
                     <ul>
                         <li>Navigation</li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Favorites</a></li>
-                        <li><a href="#">Messages</a></li>
-                        <li><a href="#">Site Map</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/">Account</Link></li>
+                        <li><Link to="/">Favorites</Link></li>
+                        <li><Link to="/">Messages</Link></li>
+                        <li><Link to="/">Site Map</Link></li>
                     </ul>
                 </div>
 
                 <div className="col-12 col-md-2">
                     <ul>
                         <li>The Society</li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Copyright Information</a></li>
-                        <li><a href="#">Socials</a></li>
-                        <li><a href="#">Sponsors / Advertisers</a></li>
+                        <li><Link to="/">About</Link></li>
+                        <li><Link to="/">Contact</Link></li>
+                        <li><Link to="/">Copyright Information</Link></li>
+                        <li><Link to="/">Socials</Link></li>
+                        <li><Link to="/">Sponsors / Advertisers</Link></li>
                     </ul>
                 </div>
             </div>
             <hr/>
             <div className="footerBottom d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">
                 <span>© The Wallpapers Society</span>
-                <span><a href="#">Community Rules</a></span>
-                <span><a href="#">Privacy Policy</a></span>
-                <span><a href="#">Terms and Conditions</a></span>
+                <span><Link to="/">Community Rules</Link></span>
+                <span><Link to="/">Privacy Policy</Link></span>
+                <span><Link to="/">Terms and Conditions</Link></span>
             
             </div>
         </div>

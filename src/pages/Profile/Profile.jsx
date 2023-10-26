@@ -17,6 +17,7 @@ import behance from "../../assets/behance.png";
 import dribble from "../../assets/dribble.png";
 import instagram from "../../assets/instagram.png";
 import Footer from "../../Shared/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const data = [
   { img: kitten },
@@ -44,9 +45,9 @@ const Profile = () => {
       <div>
         <nav className="navbar navbar-expand-lg">
           <div className="container search_Container">
-            <a className="navbar-brand" href="index">
+            <Link className="navbar-brand" to="/">
               WPS
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -60,14 +61,14 @@ const Profile = () => {
                 <i className="fa fa-bars"></i>
               </span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                 <li className="nav-item">
                   <form className="d-flex">
-                    <div
-                      className="searchNav"
-                      style={{ maxWidth: "348px" }}
-                    >
+                    <div className="searchNav" style={{ maxWidth: "348px" }}>
                       <input
                         className="w-100"
                         type="search"
@@ -77,10 +78,10 @@ const Profile = () => {
                   </form>
                 </li>
               </ul>
-              <a className="backBtn" href="main">
+              <Link className="backBtn" to="/">
                 <img className="me-2" src={left_light} alt="Left Arrow" />
                 Back
-              </a>
+              </Link>
             </div>
           </div>
         </nav>
@@ -232,7 +233,9 @@ const Profile = () => {
                               <button className="sendBtn fontBak">
                                 Send Message
                               </button>
-                              <button className="cancleBtn fontBak">Cancel</button>
+                              <button className="cancleBtn fontBak">
+                                Cancel
+                              </button>
                             </div>
                           </form>
                         </div>
@@ -282,18 +285,18 @@ const Profile = () => {
               </div>
               <div className="share">
                 <div className="d-flex justify-content-start align-items-center gap-3">
-                  <a href="#" className="overflow-hidden">
+                  <Link to="/" className="overflow-hidden">
                     <img src={twitter} alt="Twitter" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <img src={behance} alt="Behance" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <img src={dribble} alt="Dribble" />
-                  </a>
-                  <a href="#">
+                  </Link>
+                  <Link to="/">
                     <img src={instagram} alt="Instragram" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -317,61 +320,16 @@ const Profile = () => {
           {data.map((image) => (
             <div className="col-12 col-md-2">
               <div className="tredImg ownWall text-center">
-                <a href="wallpaper">
-                  <img className="img-fluid ownWall" src={image.img} alt="img" />
-                </a>
+                <Link to="/wallpaper">
+                  <img
+                    className="img-fluid ownWall"
+                    src={image.img}
+                    alt="img"
+                  />
+                </Link>
               </div>
             </div>
           ))}
-          {/* <div className="col-12 col-md-2">
-            <div className="tredImg ownWall text-center">
-              <a href="wallpaper">
-                <img className="img-fluid ownWall" src={kitten} alt="img" />
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-md-2">
-            <div className="tredImg ownWall text-center">
-              <a href="wallpaper">
-                <img className="img-fluid ownWall" src={kitten} alt="img" />
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-md-2">
-            <div className="tredImg ownWall text-center">
-              <a href="wallpaper">
-                <img className="ownWall img-fluid" src={kitten} alt="img" />
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-md-2">
-            <div className="tredImg ownWall text-center">
-              <a href="wallpaper">
-                <img className="img-fluid ownWall" src={kitten} alt="img" />
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-md-2">
-            <div className="tredImg ownWall text-center">
-              <a href="wallpaper">
-                <img className="ownWall img-fluid" src={kitten} alt="img" />
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-md-2">
-            <div className="tredImg ownWall text-center">
-              <a href="wallpaper">
-                <img className="ownWall img-fluid" src={kitten} alt="img" />
-              </a>
-            </div>
-          </div>
-          <div className="col-12 col-md-2">
-            <div className="tredImg ownWall text-center">
-              <a href="wallpaper">
-                <img className="ownWall img-fluid" src={kitten} alt="img" />
-              </a>
-            </div>
-          </div> */}
         </div>
         <div>
           <span className="d-block text-center">

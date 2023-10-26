@@ -59,6 +59,7 @@ import fram57 from "../../assets/search/Frame57.png";
 import fram58 from "../../assets/search/Frame58.png";
 import fram59 from "../../assets/search/Frame59.png";
 import fram60 from "../../assets/search/Frame60.png";
+import { Link } from "react-router-dom";
 const imageArray = [
   fram1,
   fram2,
@@ -127,13 +128,13 @@ const SearchImages = () => {
     <>
       {imageArray.map((data) => (
         <div className="tredImg">
-          <a href="#">
+          <Link to="/">
             <img
               className="searchImg img-fluid"
               src={data}
               alt="img"
             />
-          </a>
+          </Link>
         </div>
       ))}
     </>

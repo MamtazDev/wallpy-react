@@ -18,6 +18,7 @@ import Moon from "../../assets/Moon.png";
 import downArrow from "../../assets/downArrow.png";
 import arrow_down_light from "../../assets/arrow_down_light.png";
 import library_add from "../../assets/library_add.png";
+import { Link } from "react-router-dom";
 // import downArrow from '../../assets/downArrow.png';
 const WallPaper = () => {
   return (
@@ -26,9 +27,9 @@ const WallPaper = () => {
         <header>
           <nav className="navbar navbar-expand-lg">
             <div className="container custom_Container">
-              <a className="navbar-brand" href="index">
+              <Link className="navbar-brand" to="/">
                 <img src={logo} alt="Logo" />
-              </a>
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -42,7 +43,10 @@ const WallPaper = () => {
                   <i className="fa fa-bars"></i>
                 </span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                   <li className="nav-item">
                     <form className="d-flex">
@@ -57,10 +61,10 @@ const WallPaper = () => {
                   </li>
                 </ul>
                 <div className="text-center">
-                  <a className="backBtn" href="index">
+                  <Link className="backBtn" to="/">
                     <img className="me-2" src={left_light} alt="Left Arrow" />
                     Back
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -77,7 +81,11 @@ const WallPaper = () => {
                     className="text-center"
                     style={{ height: "75px", width: "75px" }}
                   >
-                    <img className="sideImgPro" src={profile} alt="Profile Image" />
+                    <img
+                      className="sideImgPro"
+                      src={profile}
+                      alt="Profile Image"
+                    />
                   </div>
                   <div className="d-flex flex-column justify-content-center align-items-center gap-2">
                     <h3>
@@ -85,26 +93,26 @@ const WallPaper = () => {
                       <img src={Verified} alt="Verified" />
                     </h3>
                     <div className="d-flex justify-content-center gap-3 align-items-center mb-4">
-                      <a href="#">
+                      <Link to="/">
                         <img src={twitter} alt="Twitter" />
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link to="/">
                         <img src={behance} alt="Behance" />
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link to="/">
                         <img src={dribble} alt="Dribble" />
-                      </a>
-                      <a href="#">
+                      </Link>
+                      <Link to="/">
                         <img src={instagram} alt="Instragram" />
-                      </a>
+                      </Link>
                     </div>
-                    <a
+                    <Link
                       className="viewProfile"
-                      href="#"
+                      to="#"
                       style={{ fontSize: "10px" }}
                     >
                       View Profile
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <hr />
@@ -197,8 +205,8 @@ const WallPaper = () => {
                   </div>
 
                   <div className="d-flex justify-content-center align-items-center gap-3">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms and Conditions</a>
+                    <Link to="/">Privacy Policy</Link>
+                    <Link to="/">Terms and Conditions</Link>
                   </div>
                 </div>
               </div>
@@ -271,23 +279,35 @@ const WallPaper = () => {
             <div className="row gy-4 mb-4">
               <div className="col-12 col-md-4">
                 <div className="tredImg">
-                  <a href="#">
-                    <img className="img-fluid w-100" src={wallpaper} alt="img" />
-                  </a>
+                  <Link to="/">
+                    <img
+                      className="img-fluid w-100"
+                      src={wallpaper}
+                      alt="img"
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="col-12 col-md-4">
                 <div className="tredImg">
-                  <a href="#">
-                    <img className="img-fluid w-100" src={wallpaper1} alt="img" />
-                  </a>
+                  <Link to="/">
+                    <img
+                      className="img-fluid w-100"
+                      src={wallpaper1}
+                      alt="img"
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="col-12 col-md-4">
                 <div className="tredImg">
-                  <a href="#">
-                    <img className="img-fluid w-100" src={wallpaper2} alt="img" />
-                  </a>
+                  <Link to="/">
+                    <img
+                      className="img-fluid w-100"
+                      src={wallpaper2}
+                      alt="img"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -309,19 +329,19 @@ const WallPaper = () => {
                 <ul>
                   <li>Navigation</li>
                   <li>
-                    <a href="#">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a href="#">Account</a>
+                    <Link to="/">Account</Link>
                   </li>
                   <li>
-                    <a href="#">Favorites</a>
+                    <Link to="/">Favorites</Link>
                   </li>
                   <li>
-                    <a href="#">Messages</a>
+                    <Link to="/">Messages</Link>
                   </li>
                   <li>
-                    <a href="#">Site Map</a>
+                    <Link to="/">Site Map</Link>
                   </li>
                 </ul>
               </div>
@@ -329,16 +349,16 @@ const WallPaper = () => {
                 <ul>
                   <li>Top Categories</li>
                   <li>
-                    <a href="#">Gaming</a>
+                    <Link to="/">Gaming</Link>
                   </li>
                   <li>
-                    <a href="#">Anime</a>
+                    <Link to="/">Anime</Link>
                   </li>
                   <li>
-                    <a href="#">4K</a>
+                    <Link to="/">4K</Link>
                   </li>
                   <li>
-                    <a href="#">Japan</a>
+                    <Link to="/">Japan</Link>
                   </li>
                 </ul>
               </div>
@@ -346,19 +366,19 @@ const WallPaper = () => {
                 <ul>
                   <li>The Society</li>
                   <li>
-                    <a href="#">About</a>
+                    <Link to="/">About</Link>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <Link to="/">Contact</Link>
                   </li>
                   <li>
-                    <a href="#">Copyright Information</a>
+                    <Link to="/">Copyright Information</Link>
                   </li>
                   <li>
-                    <a href="#">Socials</a>
+                    <Link to="/">Socials</Link>
                   </li>
                   <li>
-                    <a href="#">Sponsors / Advertisers</a>
+                    <Link to="/">Sponsors / Advertisers</Link>
                   </li>
                 </ul>
               </div>
@@ -367,13 +387,13 @@ const WallPaper = () => {
             <div className="footerBottom d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
               <span>© The Wallpapers Society</span>
               <span>
-                <a href="#">Community Rules</a>
+                <Link to="/">Community Rules</Link>
               </span>
               <span>
-                <a href="#">Privacy Policy</a>
+                <Link to="/">Privacy Policy</Link>
               </span>
               <span>
-                <a href="#">Terms and Conditions</a>
+                <Link to="/">Terms and Conditions</Link>
               </span>
               <div className="themeChangeBtn d-flex justify-content-center align-items-center gap-1">
                 <div

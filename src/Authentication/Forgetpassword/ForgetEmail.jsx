@@ -53,16 +53,16 @@ const ForgetEmail = () => {
 
                           <div className="text-center mt-4">
                             <button type="submit" className="darkBtn mb-2">
-                              <a className="text-white" href="/confirmationEmail">
+                              <Link className="text-white" href="/confirmationEmail">
                               Reset
-                              </a>
+                              </Link>
                             </button>
                           </div>
                         </form>
                         <div className="community d-flex justify-content-center gap-4 align-items-center">
-                          <a href="#">Community Rules</a>
-                          <a href="#">Privacy Policy</a>
-                          <a href="#">Terms and Conditions</a>
+                          <Link to="/">Community Rules</Link>
+                          <Link to="/">Privacy Policy</Link>
+                          <Link to="/">Terms and Conditions</Link>
                         </div>
                       </div>
                     </div>

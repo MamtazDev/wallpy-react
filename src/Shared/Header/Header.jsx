@@ -130,7 +130,7 @@ const Header = () => {
                   <img src={logout} alt="Logout" />
                 </button>
 
-                <a href="#" class="lock">
+                <Link to="/" class="lock">
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -152,9 +152,9 @@ const Header = () => {
                       </defs>
                     </svg>
                   </span>
-                </a>
+                </Link>
 
-                <a href="#" class="favourite">
+                <Link to="/" class="favourite">
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -176,9 +176,9 @@ const Header = () => {
                       </defs>
                     </svg>
                   </span>
-                </a>
+                </Link>
 
-                <a href="accountSetting" class="accSetting">
+                <Link to="accountSetting" class="accSetting">
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -200,13 +200,13 @@ const Header = () => {
                       </defs>
                     </svg>
                   </span>
-                </a>
+                </Link>
 
-                <a href="profile">
+                <Link to="/profile">
                   <div class="profileImg text-center">
                     <img src={profile} alt="Profile Image" />
                   </div>
-                </a>
+                </Link>
               </div>
             ) : (
               <div class="profileImg text-center">
