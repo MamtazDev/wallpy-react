@@ -64,7 +64,9 @@ const Artist = () => {
                 className="d-flex flex-column gap-2 align-items-center"
                 key={index}
               >
-                <img className="proImg mb-3" src={data.img} alt="Profile" />
+                <div class="proImg overflow-hidden">
+                  <img class="mb-3" src={data.img} alt="Profile" />
+                </div>
                 <div className="profileInner">
                   <div className="d-flex justify-content-start gap-1 align-items-center mb-2">
                     <img src={verified} alt="img" />
@@ -85,7 +87,11 @@ const Artist = () => {
                     </Link>
                   </div>
                 </div>
-                <Link className="viewProfile" to="#">
+                <Link
+                  className="viewProfile"
+                  style={{ fontSize: "10px", color: "#fff" }}
+                  to="#"
+                >
                   View Profile
                 </Link>
               </div>
