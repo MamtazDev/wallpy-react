@@ -8,6 +8,7 @@ import ForgetEmail from "../Authentication/Forgetpassword/ForgetEmail";
 import ConfirmationEmail from "../Authentication/Forgetpassword/ConfirmationEmail";
 import SearchPage from "../pages/SearchPage/SearchPage";
 import WallPaper from "../pages/WallPaper/WallPaper";
+import Profile from "../pages/Profile/Profile";
 
 export const router = createBrowserRouter([
   {
@@ -47,5 +48,9 @@ export const router = createBrowserRouter([
   {
     path: "/wallpaper",
     element: <WallPaper />,
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
   },
 ]);
