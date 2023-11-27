@@ -1,5 +1,5 @@
 import React from "react";
-import staff from "../../assets/staff.png";
+import staff from "../../assets/trending.png";
 import staff2 from "../../assets/staff2.png";
 import staff3 from "../../assets/staff3.png";
 import { Link } from "react-router-dom";
